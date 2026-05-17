@@ -3279,3 +3279,111 @@ I can generate that next and keep it aligned with this document.
 
 
 
+I need a use case for setting fasting goal
+Copilot said:
+Copilot
+Great—this is an important missing piece because it defines the user’s intent and drives the entire system behavior (timers, reminders, insights).
+
+Here is a clean, MVP-aligned use case you can directly add to your document.
+
+✅ Use Case 11: Set Fasting Goal
+🎯 Goal
+Allow the user to define a target fasting duration and routine, which the app will use to:
+
+guide daily behavior
+trigger reminders
+measure consistency
+👤 Scenario
+User is setting up the app for the first time (or updating their routine) and wants to follow a fasting plan such as 16:8.
+
+🪜 Steps
+User navigates to Fasting Plan / Settings
+
+User selects or inputs:
+
+Fasting duration (e.g., 14h, 16h, 18h)
+(Optional – MVP simplified)
+
+User sets preferred:
+Fasting start time (e.g., 8:00 PM)
+User taps “Save Goal”
+
+✅ System Behavior
+1. Store Goal
+Save:
+fasting target duration
+preferred start time (if provided)
+2. Update System Logic
+Use goal to:
+Calculate target completion time
+Drive reminders:
+start fasting notification
+completion notification
+3. Update UI
+Display goal clearly on main screen:
+
+Example:
+
+Fasting Goal: 16h
+Next Fast: 8:00 PM
+4. Enable Progress Tracking
+Compare actual fasting duration vs goal
+Enable future insights:
+consistency
+goal completion rate
+💡 UX Notes
+Provide preset options:
+
+12h (beginner)
+14h
+16h (default)
+18h
+Keep setup simple (avoid too many options in MVP)
+
+✅ Example Output
+After setup:
+
+Dashboard shows:
+“Goal: 16h fasting”
+Notifications:
+“Time to start fasting”
+“You reached your 16h goal ✅”
+⚠️ MVP Scope Constraints
+No adaptive goal suggestion yet
+No advanced scheduling (e.g., shifting daily windows)
+No multiple plans
+👉 Keep goal static and simple
+
+🔗 How This Use Case Connects to Others
+This use case directly enables:
+
+Use Case 2 → Start fasting reminder
+Use Case 3 → Goal comparison at completion
+Use Case 8 → Current status display
+Use Case 9 → Completion notification
+Use Case 10 → Consistency insights
+✅ Why This Is Critical
+Without this:
+
+No clear target
+No meaningful success feedback
+No structured habit
+With this:
+
+✅ The app becomes a guided routine system, not just a tracker
+
+👍 Optional (Future Enhancements – NOT MVP)
+Later versions can add:
+
+Adaptive goal (based on user success)
+Different goals for weekdays/weekends
+Goal recommendations based on ketone response
+If you want next, I can: ✅ Renumber and merge this cleanly into your full document (so it reads like one cohesive spec)
+✅ Or turn all use cases into screen-by-screen UI flow for your developer
+
+
+
+
+
+
+
