@@ -4,7 +4,7 @@
 
 ## Vision & Product Specification
 
-### **Version: v0.3**
+### **Version: v0.4 (Updated)**
 
 ***
 
@@ -14,20 +14,20 @@
 
 We are building this app to:
 
-*   Solve our own health challenges
-*   Apply our software expertise to meaningful long-term outcomes
-*   Help others with similar metabolic conditions
+*   Solve our own metabolic health challenges
+*   Leverage our software expertise for long-term impact
+*   Help others adopt sustainable health habits
 
 ***
 
 ## 1.2 Long-Term Vision
 
-> Build a **personalized, data-driven health improvement system** that helps users:
+> Build a **personalized, adaptive health system** that helps users:
 
-*   Form sustainable habits (starting with intermittent fasting)
-*   Understand their body through signals
-*   Adapt behavior based on feedback
-*   Improve specific conditions safely
+*   Form sustainable routines (starting with fasting)
+*   Understand their metabolic state
+*   Learn what works for their body
+*   Improve health conditions safely
 
 ***
 
@@ -35,25 +35,20 @@ We are building this app to:
 
 This is NOT:
 
-*   A strict fasting scheduler
-*   A generic health tracker
+*   A rigid fasting scheduler
+*   A generic tracker
 
 This IS:
 
 > ✅ A **habit-building system**  
-> ✅ A **metabolic state learning platform**  
-> ✅ A **feedback-driven coaching system**
+> ✅ A **metabolic learning platform**  
+> ✅ A **feedback-driven coaching tool**
 
 ***
 
 # 🧠 2. Core Concept
 
-    User Intent → Behavior → Signals → Insight → Action → Adaptation
-
-Key focus:
-
-*   Build habits first
-*   Optimize later
+    Intent → Behavior → Signals → Insight → Action → Adaptation
 
 ***
 
@@ -63,81 +58,60 @@ Key focus:
 
 ## ✅ 1. Routine Layer
 
-*   Fasting goal (intent-based)
-*   Reminders (optional & configurable)
+*   Intent-based fasting goal
+*   Configurable reminders
 
 ***
 
-## ✅ 2. Measurement Layer
+## ✅ 2. Measurement Layer (MVP Focus)
 
-*   Ketones (urine / blood)
-*   (Future: energy, BP, body fat)
+*   Ketone tracking:
+    *   Urine (beginner)
+    *   Blood (advanced)
+    *   Physical signs (no-tool users)
 
 ***
 
-## ✅ 3. State Engine (Future)
+## ✅ 3. State Evolution Concept
 
-*   Detect ketosis state (Yes/No + confidence)
+System supports user progression:
+
+Beginner → Intermediate → Advanced  
+Urine → Physical → Blood
 
 ***
 
 ## ✅ 4. Insight Engine
 
-*   Trends
+*   Trend detection
 *   Basic correlations (MVP)
+*   Method-aware interpretation
 
 ***
 
-## ✅ 5. Action Layer (Future)
+## ✅ 5. Motivation Layer
 
-*   Exercise guidance
-
-***
-
-## ✅ 6. Safety Layer (Future)
-
-*   Blood pressure monitoring
+*   Progress tracking
+*   Encouragement
+*   Non-punitive feedback
 
 ***
 
-## ✅ 7. Motivation Layer
+## ✅ 6. (Future Layers)
 
-*   Progress display
-*   Encouraging feedback
+*   Action (exercise guidance)
+*   Safety (BP monitoring)
+*   Adaptive intelligence
 
 ***
 
 # 🔥 4. Core Product Principles
 
-***
-
-## ✅ Intent Over Enforcement
-
-Users define goals, not strict rules
-
-***
-
-## ✅ Flexibility Over Perfection
-
-Daily variation is expected
-
-***
-
-## ✅ Progress Over Precision
-
-Trends > exact values
-
-***
-
-## ✅ Support Over Pressure
-
-Encourage, never penalize
-
-***
-
-## ✅ Simplicity First
-
-Minimum configuration
+*   ✅ Intent over enforcement
+*   ✅ Flexibility over rigidity
+*   ✅ Progress over precision
+*   ✅ Support over pressure
+*   ✅ Simplicity first
 
 ***
 
@@ -147,18 +121,18 @@ Minimum configuration
 
 ## ✅ Core Platform
 
-*   Logging system
+*   Logging engine
 *   Data storage
-*   UI components
-*   Insight engine
+*   Analysis engine
+*   Visualization
 
 ***
 
-## ✅ Modular Expansion
+## ✅ Modular Design
 
 *   Fasting module (MVP)
-*   Ketosis module
-*   Condition modules (future)
+*   Ketone module (multi-mode)
+*   Future condition modules
 
 ***
 
@@ -166,76 +140,29 @@ Minimum configuration
 
 ***
 
-## 🥇 Phase 1 – MVP
+## 🥇 Phase 1 (MVP)
 
-*   Fasting goal (simple intent)
-*   Manual fasting tracking
-*   Optional reminders
-*   Ketone logging
-*   Charts
-*   Basic insights
-
-***
-
-## 🥈 Phase 2
-
-*   Energy tracking
-*   Better visualization
-*   Consistency metrics
+*   Fasting goal
+*   Fasting tracking
+*   Reminder system
+*   Ketone tracking (3 modes)
+*   Charts + basic insights
 
 ***
 
-## 🥉 Phase 3
+## 🥈 Phase 2+
 
+*   Energy & BP
 *   Pattern detection
-*   Optimization suggestions
-
-***
-
-## 🏅 Phase 4
-
-*   Adaptive system
-*   Ketosis state engine
-
-***
-
-## 🧠 Phase 5
-
-*   Condition dashboards
-
-***
-
-## 🤝 Phase 6
-
-*   Sharing + monetization
-
-***
-
-# 💰 7. Business Approach
-
-***
-
-## Free Version
-
-*   Full features
-*   Local-only data
-
-***
-
-## Paid Version
-
-*   Cloud sync
-*   Social accountability
+*   Personalization
+*   Coaching
 
 ***
 
 # ✅ Final Summary
 
-This product is:
-
-> ✅ A **habit-first health system**  
-> ✅ A **feedback-driven learning tool**  
-> ✅ A **long-term adaptive platform**
+> This app is a **habit-first, signal-driven health system**  
+> that evolves with users from beginner to advanced.
 
 ***
 
