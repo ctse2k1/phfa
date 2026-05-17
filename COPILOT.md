@@ -3387,3 +3387,146 @@ If you want next, I can: ✅ Renumber and merge this cleanly into your full docu
 
 
 
+For 'Use Case 11', I want to use simple UX, where users only need to enter their planned intent, such as 16 hrs (default) fasting window every day. Let them manage their eating window every day. Okay to fail to compile occasionally, and give them chances to correct their habits. Key focus is to help them establish the planned habits. Can you update this use case based on my comment?
+Copilot said:
+Copilot
+Perfect—this refinement is very important because it clarifies your philosophy:
+
+✅ Keep the goal simple
+✅ Focus on intent and habit formation, not strict enforcement
+✅ Allow imperfection and recovery
+
+This aligns strongly with real behavior change.
+
+Here is the updated Use Case 11 (v1.1) incorporating your direction.
+
+✅ Use Case 11: Set Fasting Goal (Simple Intent-Based)
+🎯 Goal
+Allow the user to define a simple fasting intent, which serves as a daily guideline—not a strict rule—to help build sustainable habits over time.
+
+👤 Scenario
+User wants to adopt intermittent fasting and chooses a simple daily target such as:
+
+“I aim to fast for 16 hours each day”
+
+🪜 Steps
+User navigates to Fasting Settings
+User selects or inputs:
+Fasting goal duration (default: 16 hours)
+User taps “Save”
+✅ System Behavior
+1. Store Intent (Not a strict schedule)
+Save:
+target fasting duration (e.g., 16h)
+⚠️ No fixed daily schedule required
+⚠️ No enforced eating window
+
+2. Use Goal as a Guideline
+System uses this value to:
+
+Display daily target:
+
+Fasting Goal: 16h
+Show progress against target:
+
+Elapsed: 12h 30m
+Remaining to goal: 3h 30m
+3. Support Flexible Daily Behavior
+User manually starts and ends fasting (Use Case 1 & 3)
+Eating window is not predefined
+Daily variations are expected and allowed
+4. Handle Imperfection Gracefully
+If user ends fasting early:
+
+No penalty messaging
+Show supportive feedback:
+Examples:
+
+“You fasted 12h today — good progress”
+“You are building consistency over time”
+If user exceeds goal:
+
+Reinforce success:
+“You exceeded your 16h goal ✅”
+5. Enable Habit Tracking (Future Link)
+System tracks:
+how often goal is met
+how close user gets daily
+(Used later for insights)
+
+💡 UX Principles (Critical)
+✅ 1. Intent, Not Enforcement
+Goal acts as a target, not a rule
+No “failure” state
+✅ 2. Flexible Execution
+User decides:
+when to start fasting
+when to end
+✅ 3. Encourage Consistency Over Perfection
+Focus messaging on:
+
+progress
+habit formation
+NOT:
+
+strict adherence
+✅ 4. Minimal Setup
+Only one input:
+fasting duration
+👉 Avoid:
+
+complex schedules
+multiple plans
+✅ Example UI Output
+Fasting Goal: 16h
+
+Current Fast:
+Elapsed: 13h 10m
+3h left to goal
+
+Status:
+On track 👍
+⚠️ MVP Scope Constraints
+No adaptive goal recommendation
+No automatic schedule generation
+No rigid daily timing enforcement
+No penalties for missing goal
+🔗 Relationship to Other Use Cases
+This use case directly supports:
+
+✅ Use Case 1 → Start fasting anytime
+✅ Use Case 3 → Compare duration vs goal
+✅ Use Case 8 → Show progress vs target
+✅ Use Case 9 → Completion notification
+✅ Use Case 10 → Consistency insights (later)
+🎯 Key Product Philosophy Captured
+This version reflects your intention:
+
+✅ “Users define a goal, not a rule”
+✅ “Habits are formed gradually”
+✅ “Failure is part of the process”
+
+👍 Why This Is Better Than Traditional Apps
+Most apps:
+
+Enforce schedules
+Penalize missed goals
+Your approach:
+
+Builds long-term adherence
+Feels less stressful
+Encourages self-correction
+✅ Version Note
+v1.0 → basic goal setting (structure-focused)
+v1.1 (this version) → intent-based, flexible, habit-focused ✅
+If you’d like next, I can:
+
+Align all use cases to this same philosophy (ensuring consistency across the app), or
+Convert these into actual UI screens + flows, which your friend can directly implement.
+
+
+
+
+
+
+
