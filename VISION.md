@@ -2,7 +2,9 @@
 
 # 📄 Personal Health Feedback App
 
-## Vision & Product Specification (v0.2)
+## Vision & Product Specification
+
+### **Version: v0.3**
 
 ***
 
@@ -10,12 +12,11 @@
 
 ## 1.1 Background
 
-We are building this application to:
+We are building this app to:
 
-*   Address our own health conditions  
-    (fatty liver, prediabetes, sleep apnea, cardiovascular risk)
-*   Apply our software development expertise to meaningful, long-term personal outcomes
-*   Create a tool that can help others with similar challenges
+*   Solve our own health challenges
+*   Apply our software expertise to meaningful long-term outcomes
+*   Help others with similar metabolic conditions
 
 ***
 
@@ -23,10 +24,10 @@ We are building this application to:
 
 > Build a **personalized, data-driven health improvement system** that helps users:
 
-*   Establish sustainable habits (starting with intermittent fasting)
-*   Understand their body through measurable and experiential signals
-*   Optimize behavior based on personal response
-*   Improve specific health conditions safely
+*   Form sustainable habits (starting with intermittent fasting)
+*   Understand their body through signals
+*   Adapt behavior based on feedback
+*   Improve specific conditions safely
 
 ***
 
@@ -34,233 +35,109 @@ We are building this application to:
 
 This is NOT:
 
+*   A strict fasting scheduler
 *   A generic health tracker
-*   A calorie counting app
-*   A fitness app
 
-👉 This IS:
+This IS:
 
-> ✅ A **personal health feedback system**  
-> ✅ A **metabolic state learning tool**  
-> ✅ A **behavior → signal → insight → action loop**
+> ✅ A **habit-building system**  
+> ✅ A **metabolic state learning platform**  
+> ✅ A **feedback-driven coaching system**
 
 ***
 
 # 🧠 2. Core Concept
 
-## 2.1 Problem
+    User Intent → Behavior → Signals → Insight → Action → Adaptation
 
-Users:
+Key focus:
 
-*   Start fasting due to health concerns
-*   Struggle to maintain it because:
-    *   Results are slow
-    *   Feedback is unclear
-    *   Motivation drops
-    *   No personalization
+*   Build habits first
+*   Optimize later
 
 ***
 
-## 2.2 Solution
-
-A continuous feedback loop:
-
-    Behavior (fasting, eating)
-        ↓
-    Body Signals (ketones, energy, BP, body fat)
-        ↓
-    Interpretation (state, patterns, trends)
-        ↓
-    Action Guidance (what to do next)
-        ↓
-    Motivation (visible progress)
+# 🧩 3. Core System Layers
 
 ***
 
-# 🧩 3. System Overview
+## ✅ 1. Routine Layer
 
-## 3.1 Key System Layers
-
-### 1. Routine Layer ✅
-
-*   Fasting plan
-*   Reminders and alarms
-*   Habit formation
+*   Fasting goal (intent-based)
+*   Reminders (optional & configurable)
 
 ***
 
-### 2. Measurement Layer ✅
+## ✅ 2. Measurement Layer
 
-*   Ketones (multi-method)
-*   Body fat %
-*   Blood pressure
-*   Energy (subjective)
+*   Ketones (urine / blood)
+*   (Future: energy, BP, body fat)
 
 ***
 
-### 3. State Engine ✅ (core innovation)
+## ✅ 3. State Engine (Future)
 
-*   Detect:
-    *   “In ketosis” vs “Not in ketosis”
-*   Confidence scoring
-*   Multi-signal inference
+*   Detect ketosis state (Yes/No + confidence)
 
 ***
 
-### 4. Insight Engine ✅
+## ✅ 4. Insight Engine
 
-*   Trend detection
-*   Pattern discovery
-*   Cause-effect relationships
+*   Trends
+*   Basic correlations (MVP)
 
 ***
 
-### 5. Action Layer ✅
+## ✅ 5. Action Layer (Future)
 
 *   Exercise guidance
-*   Behavioral adjustments
 
 ***
 
-### 6. Safety Layer ✅
+## ✅ 6. Safety Layer (Future)
 
 *   Blood pressure monitoring
-*   Energy + fatigue signals
-*   Safe fasting guidance
 
 ***
 
-### 7. Motivation Layer ✅
+## ✅ 7. Motivation Layer
 
-*   Progress visualization
-*   Streaks and consistency
-*   Goal projections
-
-***
-
-# 🔥 4. Core Product Concepts
+*   Progress display
+*   Encouraging feedback
 
 ***
 
-## 4.1 Ketosis State (Key Differentiator)
-
-Instead of tracking only values:
-
-> ✅ Focus on: **“Are you in ketosis?”**
-
-Outputs:
-
-*   Yes / No / Uncertain
-*   Confidence level
-
-Inputs:
-
-*   Fasting duration
-*   Measurement (urine / blood)
-*   Energy signals
-*   Historical patterns
+# 🔥 4. Core Product Principles
 
 ***
 
-## 4.2 Measurement Evolution (User Journey)
+## ✅ Intent Over Enforcement
 
-### Stage 1 – Beginner
-
-*   Uses urine strips (cheap, temporary accuracy)
-
-### Stage 2 – Intermediate
-
-*   Switches to blood ketone testing
-
-### Stage 3 – Experienced
-
-*   Relies on body signals (energy, clarity)
+Users define goals, not strict rules
 
 ***
 
-👉 App responsibility:
+## ✅ Flexibility Over Perfection
 
-*   Guide when to measure
-*   Guide when to upgrade method
-*   Reduce unnecessary cost
+Daily variation is expected
 
 ***
 
-## 4.3 Pattern Discovery & Adaptation
+## ✅ Progress Over Precision
 
-### User Flow:
-
-1.  Track data
-2.  Discover patterns
-3.  Validate patterns
-4.  Adjust when conditions change
+Trends > exact values
 
 ***
 
-Examples:
+## ✅ Support Over Pressure
 
-*   “You enter ketosis faster after early dinner”
-*   “Weekend eating delays your progress”
-
-***
-
-## 4.4 Energy Awareness System
-
-### Inputs:
-
-*   Energy level (1–10)
-*   Energy type:
-    *   Sluggish
-    *   Normal
-    *   Focused (ketone-like)
-    *   Jittery
+Encourage, never penalize
 
 ***
 
-### Purpose:
+## ✅ Simplicity First
 
-*   Bridge between data and experience
-*   Help users recognize metabolic state
-
-***
-
-## 4.5 Action Layer (New Capability)
-
-When user is in ketosis:
-
-👉 Suggest:
-
-*   Light activity (walking)
-*   Moderate cardio
-*   Optional short HIIT (advanced)
-
-***
-
-Goal:
-
-> Help users **use ketosis**, not just reach it
-
-***
-
-## 4.6 Safety Layer
-
-### Key Inputs:
-
-*   Blood pressure
-*   Energy level
-*   Fasting duration
-
-***
-
-Outputs:
-
-*   Safe / Monitor / Adjust
-
-***
-
-Purpose:
-
-> Ensure sustainable and safe behavior
+Minimum configuration
 
 ***
 
@@ -268,37 +145,20 @@ Purpose:
 
 ***
 
-## 5.1 Core Platform
+## ✅ Core Platform
 
-Reusable system:
-
+*   Logging system
 *   Data storage
-*   Logging engine
+*   UI components
 *   Insight engine
-*   Visualization system
 
 ***
 
-## 5.2 Modular Design
+## ✅ Modular Expansion
 
-Modules:
-
-*   Fasting module
+*   Fasting module (MVP)
 *   Ketosis module
-*   Condition modules
-
-***
-
-Future:
-
-*   Fatty liver module
-*   Prediabetes module
-*   Sleep improvement module
-
-***
-
-👉 Avoid building separate apps  
-👉 Build **one extensible system**
+*   Condition modules (future)
 
 ***
 
@@ -306,204 +166,76 @@ Future:
 
 ***
 
-## 🥇 Phase 1 – Personal MVP (Critical)
+## 🥇 Phase 1 – MVP
 
-### Goal:
-
-Build something usable daily
-
-***
-
-### Features:
-
-*   Fasting tracking (start/stop)
-*   Basic reminders (start/end fasting)
-*   Ketone input (with method)
-*   Basic charts (fasting, ketones)
-*   Simple insights (trend only)
+*   Fasting goal (simple intent)
+*   Manual fasting tracking
+*   Optional reminders
+*   Ketone logging
+*   Charts
+*   Basic insights
 
 ***
 
-### Success Criteria:
+## 🥈 Phase 2
 
-✅ Used daily  
-✅ Improves personal consistency
-
-***
-
-## 🥈 Phase 2 – Motivation & Clarity
-
-### Features:
-
-*   Body fat tracking (smoothed)
-*   Energy tracking (1–10)
-*   Simple trend indicators
-*   Fasting consistency score
+*   Energy tracking
+*   Better visualization
+*   Consistency metrics
 
 ***
 
-### Success Criteria:
-
-✅ Users clearly see progress
-
-***
-
-## 🥉 Phase 3 – Personalization Engine
-
-### Features:
+## 🥉 Phase 3
 
 *   Pattern detection
-*   Optimal fasting window suggestions
-*   Ketosis timing insights
-*   Basic activity suggestions
+*   Optimization suggestions
 
 ***
 
-### Success Criteria:
+## 🏅 Phase 4
 
-✅ User learns “what works for me”
-
-***
-
-## 🏅 Phase 4 – Adaptive System
-
-### Features:
-
-*   Pattern validation
-*   Drift detection
-*   Adjustment suggestions
-*   Ketosis confidence scoring
+*   Adaptive system
+*   Ketosis state engine
 
 ***
 
-### Success Criteria:
-
-✅ App behaves like a coach
-
-***
-
-## 🧠 Phase 5 – Condition Layer
-
-### Features:
+## 🧠 Phase 5
 
 *   Condition dashboards
-*   Indicator mapping
-*   Progress signals
 
 ***
 
-### Success Criteria:
+## 🤝 Phase 6
 
-✅ Users see improvement toward health goals
+*   Sharing + monetization
 
 ***
 
-## 🤝 Phase 6 – Social & Monetization
+# 💰 7. Business Approach
 
-### Features:
+***
 
-*   Data sharing
-*   Accountability partners
+## Free Version
+
+*   Full features
+*   Local-only data
+
+***
+
+## Paid Version
+
 *   Cloud sync
+*   Social accountability
 
 ***
 
-### Business Model:
-
-*   Free:
-    *   Full features
-    *   Local-only data
-*   Paid:
-    *   Sharing + sync
-
-***
-
-# 🧪 7. Key Design Principles
-
-***
-
-## ✅ 1. Simplicity First
-
-*   Fast input
-*   Minimal friction
-
-***
-
-## ✅ 2. Trends > Raw Data
-
-*   Avoid noise
-*   Focus on direction
-
-***
-
-## ✅ 3. Personalization Over Generalization
-
-*   Learn user patterns
-*   Adapt guidance
-
-***
-
-## ✅ 4. Practical Over Scientific Precision
-
-*   Usable insights > perfect accuracy
-
-***
-
-## ✅ 5. Safety First
-
-*   No aggressive recommendations
-*   No medical claims
-
-***
-
-# 🤝 8. Collaboration Model
-
-***
-
-## Your Role (Product / Vision)
-
-*   Define features
-*   Define logic
-*   Validate real-world usefulness
-
-***
-
-## Friend’s Role (Engineering)
-
-*   System design
-*   Implementation
-*   Iteration
-
-***
-
-## Shared Goal
-
-> Build something we **use every day**  
-> → then expand
-
-***
-
-# ✅ 9. Key Differentiators
-
-***
-
-This app stands out because it:
-
-✅ Focuses on **ketosis state, not just data**  
-✅ Guides users through **measurement evolution**  
-✅ Combines **objective + subjective signals**  
-✅ Teaches users **how their body works**  
-✅ Builds **adaptive feedback loops**  
-✅ Integrates **action + safety**
-
-***
-
-# 🔚 Final Summary
+# ✅ Final Summary
 
 This product is:
 
-> ✅ A **personal metabolic learning system**  
-> ✅ A **behavior-driven health optimization tool**  
-> ✅ A **long-term adaptive coaching platform**
+> ✅ A **habit-first health system**  
+> ✅ A **feedback-driven learning tool**  
+> ✅ A **long-term adaptive platform**
 
 ***
+
