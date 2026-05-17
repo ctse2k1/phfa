@@ -4,41 +4,41 @@
 
 ## Personal Health Feedback App
 
-### **Version: v1.0**
+### **Version: v1.1**
 
 ***
 
 # 1. 🎯 Purpose of This Document
 
-This document defines **key user use cases for Phase 1 (MVP)** so that:
+This document defines the **MVP (Phase 1) user use cases**, providing:
 
-*   Developers can understand expected product behavior
-*   Product intent is clearly communicated
-*   Implementation stays aligned with real user needs
+*   Clear user interaction flows
+*   Expected system behavior
+*   Product direction aligned with habit formation and real-world usage
 
 ***
 
 # 2. 👤 Primary User
 
-*   Individual with metabolic health concerns  
-    (e.g., fatty liver, prediabetes)
+*   Individuals with metabolic health concerns (e.g., fatty liver, prediabetes)
 *   Interested in intermittent fasting
-*   Needs:
-    *   structure (routine)
-    *   feedback (data)
-    *   motivation (progress signals)
+*   Need:
+    *   Simple routine guidance
+    *   Feedback from real signals
+    *   Motivation without pressure
 
 ***
 
 # 3. 🔑 MVP Feature Scope
 
-Included in this version:
+Included:
 
-*   Fasting tracking
-*   Fasting reminders (basic routine support)
-*   Ketone tracking (multi-method input)
-*   Basic visualizations
-*   Basic insights (rule-based)
+*   Fasting goal (intent-based)
+*   Fasting tracking (manual start/stop)
+*   Basic fasting reminders
+*   Ketone tracking (urine/blood)
+*   Basic visualization
+*   Simple insights (rule-based)
 
 ***
 
@@ -50,38 +50,31 @@ Included in this version:
 
 ### 🎯 Goal
 
-User begins a fasting session easily and consistently.
-
-***
-
-### 👤 Scenario
-
-User finishes eating and wants to begin fasting.
+User starts fasting with minimal effort.
 
 ***
 
 ### 🪜 Steps
 
 1.  User opens app
-2.  User taps **“Start Fasting”**
+2.  Taps **“Start Fasting”**
 
 ***
 
 ### ✅ System Behavior
 
-*   Record start timestamp
-*   Change state to:
-    → ⏳ *Fasting in progress*
+*   Record start time
 *   Display:
-    *   elapsed time (starts immediately)
-    *   target fasting goal (e.g., 16h)
+        Fasting in Progress ⏳
+        Elapsed: 0h 00m
+        Goal: 16h
 
 ***
 
-### 💡 UX Notes
+### 💡 UX Principle
 
-*   Must be 1-tap interaction
-*   Immediate visual feedback is critical
+*   1-tap action
+*   Immediate visual feedback
 
 ***
 
@@ -91,20 +84,13 @@ User finishes eating and wants to begin fasting.
 
 ### 🎯 Goal
 
-Help user establish consistent fasting routine.
-
-***
-
-### 👤 Scenario
-
-User has defined preferred fasting start time (e.g., 8pm)
+Help user build a consistent routine.
 
 ***
 
 ### 🪜 Steps
 
-1.  Scheduled time reached
-2.  App sends notification
+1.  Preferred reminder time is reached
 
 ***
 
@@ -117,10 +103,10 @@ Notification:
 
 ***
 
-### 💡 UX Notes
+### 💡 Notes
 
-*   Non-intrusive tone
-*   Optional snooze (future enhancement)
+*   Friendly tone
+*   No pressure
 
 ***
 
@@ -130,40 +116,38 @@ Notification:
 
 ### 🎯 Goal
 
-User logs completion of fasting window.
-
-***
-
-### 👤 Scenario
-
-User is ready to eat again
+User completes or stops fasting.
 
 ***
 
 ### 🪜 Steps
 
-1.  User opens app
-2.  Taps **“End Fasting”**
+1.  User taps **“End Fasting”**
 
 ***
 
 ### ✅ System Behavior
 
-*   Record end timestamp
-*   Calculate fasting duration
-*   Display summary:
+*   Record end time
+*   Calculate duration
 
 Example:
 
     Fasting Completed ✅
-    Duration: 15h 40m
+    Duration: 13h 20m
+    Goal: 16h
 
 ***
 
-### 💡 Motivation Feedback
+### 💡 Feedback Logic
 
-*   “Great job maintaining your routine”
-*   “Close to your 16h goal”
+If below goal:
+
+*   “Good progress — building consistency”
+
+If meeting/exceeding goal:
+
+*   “You reached your goal ✅”
 
 ***
 
@@ -173,28 +157,22 @@ Example:
 
 ### 🎯 Goal
 
-User understands consistency and recent behavior.
-
-***
-
-### 🪜 Steps
-
-1.  User opens dashboard / history screen
+User sees consistency over time.
 
 ***
 
 ### ✅ System Behavior
 
-Show:
+Display:
 
 *   Daily fasting durations
-*   Simple trend chart (last 7–14 days)
+*   Simple chart (7–14 days)
 
 ***
 
-### ✅ Basic Insight
+### ✅ Insight
 
-*   “You fasted >14h on 5 of last 7 days”
+*   “You fasted over 14h on 4 of last 7 days”
 
 ***
 
@@ -204,55 +182,40 @@ Show:
 
 ### 🎯 Goal
 
-User records metabolic signal from home test.
-
-***
-
-### 👤 Scenario
-
-User performs ketone measurement (urine or blood)
+User records metabolic data.
 
 ***
 
 ### 🪜 Steps
 
-1.  User taps “Log Ketone”
-2.  Inputs:
-    *   Value (e.g., 1.2)
-    *   Method:
-        *   Urine
-        *   Blood
+1.  Tap “Log Ketone”
+2.  Input:
+    *   value
+    *   method (urine / blood)
 
 ***
 
 ### ✅ System Behavior
 
-*   Save reading with timestamp
-*   Store measurement method
+*   Save timestamp + method
 *   Update chart
 
 ***
 
-### 💡 UX Notes
+### 💡 UX Principle
 
-*   Fast entry (<5 sec)
-*   Default previous method
-
-***
+*   Fast (<5 seconds)
+*   Default last-used method
 
 ***
 
-# ✅ Use Case 6: View Ketone Trends
+***
+
+# ✅ Use Case 6: View Ketone Trend
 
 ### 🎯 Goal
 
-User visualizes metabolic changes over time.
-
-***
-
-### 🪜 Steps
-
-1.  User opens dashboard
+User understands metabolic changes.
 
 ***
 
@@ -260,17 +223,17 @@ User visualizes metabolic changes over time.
 
 Display:
 
-*   Ketone level chart
-*   Simple trend indicator:
+*   Ketone chart
+*   Trend:
     *   ↑ increasing
     *   ↓ decreasing
     *   → stable
 
 ***
 
-### ✅ Insight Example
+### ✅ Insight
 
-*   “Ketone levels trending upward this week”
+*   “Ketone levels trending upward”
 
 ***
 
@@ -280,13 +243,7 @@ Display:
 
 ### 🎯 Goal
 
-Help user observe relationship between fasting and ketones.
-
-***
-
-### 🪜 Steps
-
-1.  User views combined summary
+Help user connect fasting behavior with ketones.
 
 ***
 
@@ -294,35 +251,27 @@ Help user observe relationship between fasting and ketones.
 
 Display:
 
-*   Fasting duration and ketone values (basic comparison)
+*   Fasting duration + ketone readings
 
 ***
 
-### ✅ Insight Example
+### ✅ Insight
 
-*   “Higher ketone readings tend to occur after longer fasts”
-
-***
-
-⚠️ Note:
-
-*   Simple rule-based observation only (no complex analysis yet)
+*   “Higher ketones observed on longer fasting days”
 
 ***
 
+⚠️ Simple rule-based only (MVP)
+
 ***
 
-# ✅ Use Case 8: View Current Fasting Status
+***
+
+# ✅ Use Case 8: View Current Status
 
 ### 🎯 Goal
 
-Provide immediate visibility of current state.
-
-***
-
-### 🪜 Steps
-
-1.  User opens app home screen
+User instantly sees current state.
 
 ***
 
@@ -330,23 +279,18 @@ Provide immediate visibility of current state.
 
 Display:
 
-#### Current State
+    Status: Fasting ⏳
 
-*   🍽 Eating
-*   ⏳ Fasting
+    Elapsed: 11h 10m
+    Remaining to goal: 4h 50m
 
-***
-
-#### Timing Info
-
-    Elapsed: 10h 20m
-    Remaining: 5h 40m
+    Goal: 16h
 
 ***
 
 ### 💡 Importance
 
-This is the **most frequently viewed screen**
+This is the **main screen users check frequently**
 
 ***
 
@@ -356,13 +300,7 @@ This is the **most frequently viewed screen**
 
 ### 🎯 Goal
 
-Reinforce behavior completion (motivation).
-
-***
-
-### 🪜 Steps
-
-1.  Fasting duration reaches target
+Reinforce positive behavior.
 
 ***
 
@@ -370,11 +308,11 @@ Reinforce behavior completion (motivation).
 
 Notification:
 
-    You completed 16h fasting ✅
+    You reached your 16h goal ✅
 
 ***
 
-### ✅ Optional Message
+### ✅ Optional message
 
 *   “You may be entering fat-burning state”
 
@@ -390,19 +328,89 @@ Turn data into simple meaning.
 
 ***
 
+### ✅ System Behavior
+
+Messages like:
+
+*   “Your fasting consistency is improving”
+*   “You fasted longer this week”
+*   “Ketone levels are increasing”
+
+***
+
+***
+
+# ✅ Use Case 11: Set Fasting Goal (Intent-Based)
+
+### 🎯 Goal
+
+User defines a **simple fasting intent** to guide behavior.
+
+***
+
 ### 🪜 Steps
 
-1.  User opens insights section
+1.  User opens **Fasting Settings**
+2.  Selects fasting duration
+    *   Default: **16 hours**
+3.  Taps **“Save”**
 
 ***
 
 ### ✅ System Behavior
 
-Display simple messages:
+#### 1. Store Goal
 
-*   “Your fasting consistency is improving”
-*   “You fasted longer this week vs last week”
-*   “Ketone levels are increasing”
+*   Save fasting duration only
+
+***
+
+#### 2. No Fixed Schedule
+
+*   No required start time
+*   No defined eating window
+
+***
+
+#### 3. Use Goal as Guidance
+
+Display:
+
+    Fasting Goal: 16h
+
+Show real-time progress:
+
+    Elapsed: 12h 30m
+    3h 30m to goal
+
+***
+
+#### 4. Allow Flexible Daily Behavior
+
+*   User decides when to:
+    *   start fasting
+    *   stop fasting
+
+***
+
+#### 5. Handle Imperfection Gracefully
+
+If goal not met:
+
+*   “You fasted 12h today — good progress”
+
+If goal exceeded:
+
+*   “Great job — you exceeded your goal ✅”
+
+***
+
+### 💡 UX Principles
+
+✅ Intent, not enforcement  
+✅ Flexible daily execution  
+✅ Encourage consistency over perfection  
+✅ Minimal setup (1 input only)
 
 ***
 
@@ -412,111 +420,127 @@ Display simple messages:
 
 ***
 
-## ✅ Inputs (MVP)
+## ✅ Inputs
 
-*   Fasting start / end times
+*   Fasting start / end
+*   Fasting goal
 *   Ketone values + method
-*   Time-based triggers
+*   Time triggers
 
 ***
 
-## ✅ Outputs (MVP)
+## ✅ Outputs
 
-*   Timer / state display
+*   Current state (fasting/eating)
+*   Timer and progress
 *   Charts
-*   Basic insights
+*   Simple insights
 *   Notifications
 
 ***
 
 ***
 
-# ⚠️ 6. Out of Scope (Explicit for Developers)
+# ⚠️ 6. Out of Scope (MVP Boundary)
 
 Do NOT include yet:
 
-*   Energy tracking
-*   Blood pressure
+*   Energy level tracking
 *   Ketosis state engine
 *   Pattern detection
+*   Blood pressure
+*   Exercise recommendations
 *   Adaptive system
-*   Exercise guidance
 *   Condition dashboards
-*   Social sharing
+*   Social / sharing features
 
 ***
 
-👉 Prevents scope creep
-
-***
+👉 Prevent scope creep
 
 ***
 
 # ✅ 7. MVP Success Criteria
 
-MVP is successful if:
+MVP succeeds if:
 
-*   Users log fasting daily ✅
-*   Users log ketone data consistently ✅
-*   Users can see simple trends ✅
-*   Users feel more motivated ✅
-
-***
-
-# 🧭 8. Product Principles (For Development)
+*   Users track fasting daily ✅
+*   Users log ketones regularly ✅
+*   Users see progress trends ✅
+*   Users feel encouraged to continue ✅
 
 ***
 
-## ✅ 1. Speed > Complexity
-
-All inputs must be fast
+# 🧭 8. Product Principles
 
 ***
 
-## ✅ 2. Always Show State
+## ✅ 1. Intent Over Control
 
-User should always know:
-
-*   Am I fasting?
-*   How long?
-*   What’s next?
+User sets goal, not strict rules
 
 ***
 
-## ✅ 3. Immediate Feedback
+## ✅ 2. Simplicity First
 
-Every action updates UI instantly
-
-***
-
-## ✅ 4. Low Friction
-
-Avoid:
-
-*   multiple steps
-*   unnecessary inputs
+Fast interactions, minimal inputs
 
 ***
 
-***
+## ✅ 3. Encourage, Don’t Penalize
 
-# ✅ 9. Versioning Note
-
-*   **v1.0** = Initial MVP definition aligned with Phase 1 roadmap
-*   Future versions will:
-    *   Add energy tracking
-    *   Add ketosis state engine
-    *   Add pattern detection and personalization
-    *   Extend into health condition modules
+No “failure” states
 
 ***
 
-# 👍 Final Comment
+## ✅ 4. Visibility Always
 
-This document is now:
+User can instantly see:
 
-✅ Clear enough for engineers to start building  
-✅ Focused enough to avoid overengineering  
-✅ Aligned with your long-term vision
+*   current state
+*   progress
+
+***
+
+## ✅ 5. Real-World Flexibility
+
+App adapts to user life, not vice versa
+
+***
+
+***
+
+# ✅ 9. Version Notes
+
+## v1.0
+
+*   Initial MVP definition
+
+## v1.1 (Current)
+
+*   Added **intent-based fasting goal**
+*   Aligned entire system to:
+    *   flexible routine
+    *   habit-building philosophy
+    *   non-strict UX
+
+***
+
+# 👍 Final Summary
+
+This MVP delivers:
+
+✅ A **simple fasting habit system**  
+✅ A **basic metabolic tracking tool**  
+✅ A **low-pressure, sustainable user experience**
+
+***
+
+## 🚀 What Developers Should Understand
+
+You are building:
+
+> NOT a strict fasting scheduler  
+> BUT a **supportive habit-building system**
 
 ***
