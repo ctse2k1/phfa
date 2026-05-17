@@ -3835,3 +3835,171 @@ Just tell me 👍
 
 
 
+For 'Use Case 2', what can users use to control this reminder behavior? There are few options, but more important for users to choice what they need. For example, by default, this settings should co-relate with planned fasting time, such as, fasting reminder time = 24 hrs - planned fasting time. In other words, this is more align with how most people communicate fasting strategies, i.e. 16:8 or 18:6, etc. Given that, users may not want this reminder at all, so, need a way to disable it. For some users, they may want to challenge next level whenever they feel they are ready, then they may want to set the reminder with shorter reminder time than default, and this can actually be another use case, my app can suggest users with success in establishing planned habits to use this feature to challenge next level.
+Copilot said:
+Copilot
+Great question—this is exactly the kind of design thinking that makes your app practical and user-friendly instead of rigid.
+
+You’re not just adding a setting—you’re designing a control system + growth mechanism.
+
+Let me refine Use Case 2 and introduce a supporting configuration use case, while keeping everything aligned with your philosophy:
+
+✅ Updated Use Case 2: Fasting Reminder (Controlled & Flexible)
+🎯 Goal
+Help users establish fasting habits through reminders that are:
+
+✅ Optional
+✅ Adjustable
+✅ Aligned with their intent (16:8, 18:6, etc.)
+🧠 Core Concept
+Reminder is NOT:
+
+a fixed alarm
+👉 It is:
+
+✅ A user-controlled habit support tool
+
+👤 Scenario
+User has set a fasting goal (e.g., 16h), and optionally enables reminders.
+
+🪜 Steps
+System calculates default reminder time:
+Reminder Time = 24h – Fasting Goal
+Example:
+16h fast → reminder after 8h eating window
+At reminder time:
+App sends notification (if enabled)
+✅ System Behavior
+Default Behavior (auto-aligned with goal)
+Example:
+
+Time to start fasting
+You’ve been in eating window for ~8 hours
+[Start Now]
+Always Optional
+If reminder disabled → no notification sent
+Tone
+Supportive, not strict
+No penalty or pressure
+🧩 NEW Supporting Use Case 12: Configure Fasting Reminder
+(This is what gives users control)
+
+✅ Use Case 12: Configure Fasting Reminder
+🎯 Goal
+Allow users to control how fasting reminders behave based on their preferences and readiness level.
+
+👤 Scenario
+User wants to:
+
+Disable reminders
+Follow default rhythm
+Or challenge themselves
+🪜 Steps
+User goes to Reminder Settings
+
+User selects one of the options:
+
+✅ Option A: Disabled
+Fasting Reminder: OFF
+System behavior:
+
+No reminders triggered
+✅ Option B: Default (Recommended)
+Fasting Reminder: ON (Auto)
+Behavior:
+
+Reminder = 24h – fasting goal
+✅ Option C: Custom (Advance / Challenge Mode)
+User sets:
+
+Remind me after: X hours
+Example:
+
+Goal: 16h
+Default eating window: 8h
+User sets reminder: 6h
+👉 Result:
+
+User starts fasting earlier → longer fasting potential
+✅ System Behavior
+For Custom Mode:
+Reminder triggers based on user-defined delay after last fast ends
+For All Modes:
+Reminder is:
+Non-blocking
+Skippable
+💡 UX Notes
+✅ Keep it simple in UI:
+Fasting Reminder:
+( ) Off
+(•) Default (based on goal)
+( ) Custom
+
+If Custom:
+[ 6 hours ]
+🔥 3) Smart Opportunity (Future Enhancement – NOT MVP)
+You mentioned a very powerful idea:
+
+Suggest users to challenge next level
+
+✅ Future Insight Example:
+If system detects:
+
+High consistency (e.g., 80% goal completion)
+App suggests:
+
+You’ve been consistently reaching your 16h goal.
+Would you like to challenge yourself?
+
+Try starting fasting 1 hour earlier.
+👉 This ties:
+
+Reminder system
+Habit maturity
+Progression
+🔗 How This Connects to Your Product Philosophy
+✅ Supports Flexibility
+Users can ignore, adjust, or disable
+✅ Supports Habit Formation
+Default aligns with natural rhythm (16:8 etc.)
+✅ Supports Growth
+Custom mode enables self-challenge
+✅ Avoids Friction
+No over-configuration required
+✅ Updated Summary of Use Case 2
+Aspect	Design
+Default behavior	Based on fasting goal
+Required?	❌ No — optional
+Adjustable?	✅ Yes
+Supports progression?	✅ Yes (future)
+Tone	Encouraging, not strict
+👍 Final Insight
+You’ve just designed something subtle but powerful:
+
+✅ A habit support system that evolves with the user
+
+Most apps:
+
+Either too rigid
+Or too passive
+Your approach:
+
+Starts simple ✅
+Adapts to user readiness ✅
+Encourages growth without pressure ✅
+👉 Recommendation
+You should:
+
+✅ Update your MVP Use Case doc to rename Use Case 2 as:
+“Fasting Reminder (Optional & Configurable)”
+
+✅ Add Use Case 12: Reminder Configuration
+If you want next, I can: ✅ Merge these changes into your full Use Cases v1.2 document (clean + consistent)
+✅ Or move to data model design for reminders & scheduling
+
+
+
+
+
+
+
