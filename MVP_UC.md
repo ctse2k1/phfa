@@ -1,21 +1,24 @@
+***
+
 # 📄 MVP Use Cases
 
 ## Personal Health Feedback App
 
-### **Version: v1.2**
+### **Version: v1.3 (Updated)**
 
 ***
 
 # 1. 🎯 Purpose
 
-Define MVP user interactions clearly for development.
+Define clear user interactions to guide MVP development.
 
 ***
 
 # 2. 👤 Primary User
 
-*   Beginner/intermediate fasting user
-*   Needs structure + motivation
+*   New or intermediate fasting users
+*   Seeking structure + feedback
+*   Different experience levels
 
 ***
 
@@ -24,9 +27,8 @@ Define MVP user interactions clearly for development.
 *   Fasting goal (intent-based)
 *   Fasting tracking
 *   Configurable reminders
-*   Ketone logging
-*   Charts
-*   Basic insights
+*   Ketone tracking (3 modes)
+*   Charts & insights
 
 ***
 
@@ -36,73 +38,177 @@ Define MVP user interactions clearly for development.
 
 # ✅ Use Case 1: Start Fasting
 
-*   Tap “Start Fasting”
-*   System tracks time and shows progress
+*   User taps “Start Fasting”
+*   Timer begins
+*   State displayed
 
 ***
 
 # ✅ Use Case 2: Fasting Reminder (Optional & Configurable)
 
-## Behavior:
-
+*   OFF / Default / Custom
 *   Default:
-        Reminder Time = 24h – Fasting Goal
-*   Example:
-    *   16h fasting → reminder after \~8h eating window
+        Reminder = 24h – fasting goal
+*   Supports challenge mode (shorter eating window)
 
-## Notification:
-
-    Time to start fasting
-    [Start Now]
-
-✅ Can be disabled  
-✅ Non-intrusive
+***
 
 ***
 
 # ✅ Use Case 3: End Fasting
 
-*   Tap “End Fasting”
-*   System shows duration and feedback
+*   User taps “End Fasting”
+*   Duration calculated
+*   Encouraging feedback shown
+
+***
 
 ***
 
 # ✅ Use Case 4: View Fasting History
 
-*   Chart + daily durations
-*   Simple consistency insight
+*   Daily durations
+*   Basic trend chart
+*   Simple insights
 
 ***
 
-# ✅ Use Case 5: Log Ketone
+***
 
-*   Input value + method (urine/blood)
-*   Fast entry (<5 sec)
+# ✅ Use Case 5: Log Ketone Measurement (Multi-Mode)
 
 ***
 
-# ✅ Use Case 6: View Ketone Trends
+## 🎯 Goal
 
-*   Chart
-*   Trend indicator
+Enable fast, stage-appropriate ketone tracking.
 
 ***
 
-# ✅ Use Case 7: Basic Correlation
+## Step 1: Select Method (one-time)
 
-*   Compare fasting vs ketones
-*   Simple rule-based insights
+    ( ) Urine Test
+    ( ) Blood Test
+    ( ) Physical Signs
+
+***
+
+## Step 2: Daily Logging
+
+***
+
+### 🔵 Urine Test
+
+Input:
+
+    [ Negative ]
+    [ Trace ]
+    [ Small ]
+    [ Moderate ]
+    [ Large ]
+
+***
+
+### 🔴 Blood Test
+
+Input:
+
+    [ 1.2 mmol/L ]
+
+***
+
+### 🟢 Physical Signs
+
+Input:
+
+    [ ] Keto Breath
+    [ ] Appetite Suppression
+    [ ] Increased Energy & Focus
+    [ ] Keto Flu
+    [ ] Increased Thirst
+
+***
+
+## ✅ System Behavior
+
+*   Auto-save method
+*   Record timestamp
+*   Allow multiple entries daily
+
+***
+
+## 💡 Key Design
+
+*   Fast input (<5s)
+*   Method persistence
+*   Supports all user stages
+
+***
+
+***
+
+# ✅ Use Case 6: View Ketone Trends (Method-Aware)
+
+***
+
+### 🔵 Urine Mode
+
+*   Categorical trends
+*   Insight:
+    *   “Levels increasing”
+
+***
+
+### 🔴 Blood Mode
+
+*   Numeric trends
+*   Insight:
+    *   “Stable in ketosis range”
+
+***
+
+### 🟢 Physical Signs Mode
+
+*   Signal frequency
+*   Insight:
+    *   “More ketosis signals detected”
+
+***
+
+***
+
+# ✅ Use Case 7: Basic Correlation (Method-Aware)
+
+***
+
+### 🔵 Urine
+
+*   Fasting vs level category
+
+***
+
+### 🔴 Blood
+
+*   Fasting vs mmol/L
+
+***
+
+### 🟢 Physical
+
+*   Fasting vs signal frequency
+
+***
 
 ***
 
 # ✅ Use Case 8: View Current Status
 
-Display:
-
     Fasting ⏳
     Elapsed: X
     Remaining: Y
     Goal: 16h
+
+***
 
 ***
 
@@ -112,95 +218,74 @@ Display:
 
 ***
 
-# ✅ Use Case 10: Basic Insights
+***
+
+# ✅ Use Case 10: Insights
 
 *   “Consistency improving”
-*   “Fasting longer this week”
-*   “Ketones increasing”
+*   “Longer fasting → better results”
+
+***
 
 ***
 
 # ✅ Use Case 11: Set Fasting Goal (Intent-Based)
 
-*   Input fasting duration (default: 16h)
-*   No schedule required
-*   No strict enforcement
-
-Behavior:
-
-*   Flexible start/end daily
-*   Encouraging feedback
+*   Input fasting duration only
+*   No schedule
+*   Flexible daily behavior
 
 ***
 
-# ✅ Use Case 12: Configure Fasting Reminder
-
 ***
 
-## Options:
+# ✅ Use Case 12: Configure Reminder
 
-### OFF
+Options:
 
-*   No reminders
+*   OFF
+*   Default
+*   Custom
 
-***
+Supports:
 
-### DEFAULT (Recommended)
-
-*   Auto = 24h – goal
-
-***
-
-### CUSTOM (Advanced)
-
-*   User defines reminder timing
-
-Example:
-
-*   Goal: 16h
-*   Reminder: 6h eating window
-
-👉 Enables challenge mode
+*   Habit formation
+*   Challenge progression
 
 ***
-
-## UI Example:
-
-    Fasting Reminder:
-    ( ) Off
-    (•) Default
-    ( ) Custom: [ 6h ]
 
 ***
 
 # 🧠 5. System Summary
 
-***
-
 ## Inputs
 
 *   Fasting start/end
 *   Goal
-*   Ketones
+*   Ketone data
 *   Reminder settings
 
 ***
 
 ## Outputs
 
-*   Timer & state
+*   Timer
 *   Charts
 *   Insights
 *   Notifications
 
 ***
 
-# ⚠️ 6. Out of Scope
+***
+
+# ⚠️ 6. Out of Scope (MVP)
 
 *   Energy tracking
-*   BP monitoring
-*   Pattern engine
+*   BP
+*   Advanced analytics
 *   Social features
+
+***
 
 ***
 
@@ -208,32 +293,23 @@ Example:
 
 *   Daily usage ✅
 *   Habit formation ✅
-*   Visible progress ✅
-*   User motivation ✅
+*   Continued engagement ✅
 
 ***
 
-# 🧭 8. Product Principles
+***
+
+# ✅ 8. Version Notes
+
+### v1.2
+
+*   Reminder system introduced
+
+### v1.3 (Current)
+
+*   Multi-mode ketone tracking
+*   Method-aware insights
+*   User progression model added
 
 ***
 
-✅ Intent over control  
-✅ Flexible execution  
-✅ Encourage, don’t punish  
-✅ Always show progress
-
-***
-
-# ✅ 9. Version Notes
-
-### v1.1
-
-*   Introduced intent-based fasting goal
-
-### v1.2 (Current)
-
-*   Added configurable reminder system
-*   Added challenge-mode behavior
-*   Improved habit-based philosophy
-
-***
